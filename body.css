@@ -1,6 +1,6 @@
 /* 画面サイズチェック用 */
 #formatsize{
-  font-size: 3vw;
+  font-size: 3vw
 }
 
 @media screen and (min-width: 800px) {

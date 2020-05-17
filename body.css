@@ -293,29 +293,27 @@ summary::-webkit-details-marker {
     display:none;
 }
 
-/*ボタン（光）*/
-.shiny-btn {
+.shiny-btn1 {
     display: block;
     position: relative;
     width: 50%;/*ボタンの幅*/
     padding: 10px 0;
     margin: 30px auto;
-    background-color: #f2888d;/*ボタンの色*/
-    border-radius: 25px;
+    background-color: #ed4545;/*ボタンの色*/
+    box-shadow: 0 3px 0 0 rgba(198, 39, 39, 1);/*影の色(rgbaの値を変更)*/
+    border-radius: 5px;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 18px;
     color: #fff;
     text-align: center;
     text-decoration: none;
     overflow: hidden;
-    transition: 0.2s;
 }
-.shiny-btn:hover {
+.shiny-btn1:hover {
     text-decoration: none;
     color: #fff;
-    opacity: 0.7;
 }
-.shiny-btn::before {
+.shiny-btn1::before {
     position: absolute;
     content: '';
     display: inline-block;
@@ -324,9 +322,9 @@ summary::-webkit-details-marker {
     width: 30px;
     height: 100%;
     background-color: #fff;
-    animation: shiny-btn 3s ease-in-out infinite;
+    animation: shiny-btn1 3s ease-in-out infinite;
 }
-@-webkit-keyframes shiny-btn {
+@-webkit-keyframes shiny-btn1 {
     0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
     80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
     81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }

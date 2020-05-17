@@ -293,6 +293,71 @@ summary::-webkit-details-marker {
     display:none;
 }
 
+/*ボタン（光）/
+.shiny-btn {
+    display: block;
+    position: relative;
+    width: 50%;/*ボタンの幅*/
+    padding: 10px 0;
+    margin: 30px auto;
+    background-color: #f2888d;/*ボタンの色*/
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 3vw;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.shiny-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+}
+.shiny-btn::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn10 3s ease-in-out infinite;
+}
+@-webkit-keyframes shiny-btn10 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+/*ボックス（ポイント）*/
+.point_box {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+}
+.point_box .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 3vw;
+    background: #FFF;
+    color: #95ccff;
+    font-weight: bold;
+}
+.point_box p {
+    font-size:3vw;
+    margin: 0; 
+    padding: 0;
+}
 
 
 /*背景（吹き出し）*/
